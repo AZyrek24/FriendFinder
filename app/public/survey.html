@@ -9,7 +9,7 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
-
+  <script src="https://code.jquery.com/jquery.js"></script>
 </head>
 
 
@@ -24,11 +24,11 @@
       </h3>
       <h4>Name (Required)</h4>
       <div class="form-group">
-        <input type="text" class="form-control" id="name">
+        <input type="text" class="form-control" id="name" required>
       </div>
       <h4>Link to Photo Image (Required)</h4>
       <div class="form-group">
-        <input type="text" class="form-control" id="photo">
+        <input type="text" class="form-control" id="photo" required>
       </div>
       <hr>
     </div>
@@ -38,134 +38,144 @@
         <b>Question 1</b>
       </h3>
       <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
-      <div class="form-group">
-        <select class="form-control" id="sel1">
-          <option>1 (Strongly Disagree)</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5 (Strongly Agree)</option>
+      <div class="form-group" style="width: 160px">
+        <select class="form-control" id="sel1" required>
+          <option value="">Select an Option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
         </select>
       </div>
       <h3>
         <b>Question 2</b>
       </h3>
       <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
-      <div class="form-group">
-        <select class="form-control" id="sel2">
-          <option>1 (Strongly Disagree)</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5 (Strongly Agree)</option>
+      <div class="form-group" style="width: 160px">
+        <select class="form-control" id="sel2" required>
+          <option value="">Select an Option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
         </select>
       </div>
       <h3>
         <b>Question 3</b>
       </h3>
       <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
-      <div class="form-group">
-        <select class="form-control" id="sel3">
-          <option>1 (Strongly Disagree)</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5 (Strongly Agree)</option>
+      <div class="form-group" style="width: 160px">
+        <select class="form-control" id="sel3" required>
+          <option value="">Select an Option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
         </select>
       </div>
       <h3>
         <b>Question 4</b>
       </h3>
       <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
-      <div class="form-group">
-        <select class="form-control" id="sel4">
-          <option>1 (Strongly Disagree)</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5 (Strongly Agree)</option>
+      <div class="form-group" style="width: 160px">
+        <select class="form-control" id="sel4" required>
+          <option value="">Select an Option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
         </select>
       </div>
       <h3>
         <b>Question 5</b>
       </h3>
       <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
-      <div class="form-group">
-        <select class="form-control" id="sel5">
-          <option>1 (Strongly Disagree)</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5 (Strongly Agree)</option>
+      <div class="form-group" style="width: 160px">
+        <select class="form-control" id="sel5" required>
+          <option value="">Select an Option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
         </select>
       </div>
       <h3>
         <b>Question 6</b>
       </h3>
       <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
-      <div class="form-group">
-        <select class="form-control" id="sel6">
-          <option>1 (Strongly Disagree)</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5 (Strongly Agree)</option>
+      <div class="form-group" style="width: 160px">
+        <select class="form-control" id="sel6" required>
+          <option value="">Select an Option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
         </select>
       </div>
       <h3>
         <b>Question 7</b>
       </h3>
       <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
-      <div class="form-group">
-        <select class="form-control" id="sel7">
-          <option>1 (Strongly Disagree)</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5 (Strongly Agree)</option>
+      <div class="form-group" style="width: 160px">
+        <select class="form-control" id="sel7" required>
+          <option value="">Select an Option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
         </select>
       </div>
       <h3>
         <b>Question 8</b>
       </h3>
       <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
-      <div class="form-group">
-        <select class="form-control" id="sel8">
-          <option>1 (Strongly Disagree)</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5 (Strongly Agree)</option>
+      <div class="form-group" style="width: 160px">
+        <select class="form-control" id="sel8" required>
+          <option value="">Select an Option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
         </select>
       </div>
       <h3>
         <b>Question 9</b>
       </h3>
       <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
-      <div class="form-group">
-        <select class="form-control" id="sel9">
-          <option>1 (Strongly Disagree)</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5 (Strongly Agree)</option>
+      <div class="form-group" style="width: 160px">
+        <select class="form-control" id="sel9" required>
+          <option value="">Select an Option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
         </select>
       </div>
       <h3>
         <b>Question 10</b>
       </h3>
       <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
-      <div class="form-group">
-        <select class="form-control" id="sel10">
-          <option>1 (Strongly Disagree)</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5 (Strongly Agree)</option>
+      <div class="form-group" style="width: 160px">
+        <select class="form-control" id="sel10" required>
+          <option value="">Select an Option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
         </select>
       </div>
       <hr>
-      <button type="submit" class="btn btn-info btn-md" id="submit" style="width:100%">
+      <button type="button" class="btn btn-info btn-md" style="width:100%" data-toggle="modal" data-target="#results-modal">
         <h4>
           <i class="far fa-check-circle"></i> Submit</h4>
       </button>
@@ -182,77 +192,83 @@
       </footer>
     </div>
   </div>
+  <div class="modal fade" id="results-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Friend Match</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h2 id="match-name"></h2>
+          <img id="match-img" src="" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <script src="https://code.jquery.com/jquery.js"></script>
+  
   <script type="text/javascript">
 
-    // In this code below we create the Front-end Javascript which "POSTS" our form data to our express server.
-    // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
-    // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
-    // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+    $("button").on("click", function () {
+      // event.preventDefault();
 
-    $(".submit").on("click", function () {
-
-      // Here we grab the form elements
+      // Gets element from form and creates new object
       var newFriendsData = {
         name: $('#name').val().trim(),
         photo: $('#photo').val().trim(),
         scores: [
-          $('#sel1').val().trim(),
-          $('#sel2').val().trim(),
-          $('#sel3').val().trim(),
-          $('#sel4').val().trim(),
-          $('#sel5').val().trim(),
-          $('#sel6').val().trim(),
-          $('#sel7').val().trim(),
-          $('#sel8').val().trim(),
-          $('#sel9').val().trim(),
-          $('#sel10').val().trim()
+          $('#sel1').val(),
+          $('#sel2').val(),
+          $('#sel3').val(),
+          $('#sel4').val(),
+          $('#sel5').val(),
+          $('#sel6').val(),
+          $('#sel7').val(),
+          $('#sel8').val(),
+          $('#sel9').val(),
+          $('#sel10').val()
         ]
       };
-
       console.log(newFriendsData);
 
-      // This line is the magic. It's very similar to the standard ajax function we used.
-      // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
-      // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
-      // depending on if a tables is available or not.
-
-      // Here we get the location of the root page.
-      // We use this instead of explicitly saying the URL is localhost:3001 because the url will change when we deploy.
       var currentURL = window.location.origin;
 
-      $.post(currentURL + "/data/friends", newFriendsData,
+      $.post(currentURL + "/api/friends", newFriendsData,
         function (data) {
 
-          // If a table is available... tell user they are booked.
-          if (data == true) {
-            alert("Yay! You are officially booked!")
-          }
+          // AJAX post the data to the friends API.
+          $.post("/api/friends", userData, function (data) {
 
-          // If a table is available... tell user they on the waiting list.
-          if (data == false) {
-            alert("Sorry you are on the wait list")
-          }
+            // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+            $("#match-name").text(data.name);
+            $("#match-img").attr("src", data.photo);
+
+            // Show the modal with the best match
+            $("#results-modal").modal("toggle");
+
+          });
 
           // Clear the form when submitting
-          $('#reserve_name').val("");
-          $('#reserve_phone').val("");
-          $('#reserve_email').val("");
-          $('#reserve_uniqueID').val("");
-
+          $('#name').val("");
+          $('#photo').val("");
+          $('#sel1').val("");
+          $('#sel3').val("");
+          $('#sel4').val("");
+          $('#sel6').val("");
+          $('#sel7').val("");
+          $('#sel8').val("");
+          $('#sel9').val("");
+          $('#sel10').val("");
         });
-
-      return false;
-
     });
 
   </script>
-
-
-
-
-
 </body>
 
 </html>
