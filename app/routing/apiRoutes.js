@@ -1,7 +1,12 @@
 var friendsData = require('../data/friends');
+
+// Global Variables and Arrays
+//=========================================================================================================
 var newFriend = [];
 var lowestScoreDiff = 1000;
 var foundFriend;
+
+
 module.exports = function(app) {
   app.get('/api/friends', function (req, res) {
     res.json(friendsData);
@@ -13,6 +18,7 @@ module.exports = function(app) {
     checkScores();
     console.log("NEW FRIEND: ")
     console.log(foundFriend);
+    res.json(foundFriend);
   })
 }
 
@@ -24,12 +30,10 @@ function checkScores() {
     for (var j = 0; j < 10; j++) {
       differenceNum += (Math.abs(parseInt(friendsData[i].scores[j]) - parseInt(newFriend.scores[j])));
     }
-    console.log(friendsData[i].name);
-    console.log(differenceNum);
     if (differenceNum < lowestScoreDiff) {
       lowestScoreDiff = differenceNum;
       foundFriend = friendsData[i];
-    }    
+    }   
   }
-  return;
+  return foundFriend;
 }
